@@ -89,13 +89,13 @@ const trabajos = [
         nombre: "Six Bar PLC",
         tipo: "brand",
         categorias: ["video", "redes"],
-        portada: "img/sixbar-3.jpg",
+        portada: "img/logo-sixbar.jpg",
         resumen: { es: "Bar & Restaurante", en: "Bar & Restaurant" },
         descripcion: {
             es: "Edición de video, grabación de contenido audiovisual y gestión de contenido para Instagram.",
             en: "Video editing, audiovisual content shooting and Instagram content management."
         },
-        imagenes: ["img/sixbar-1.jpg", "img/sixbar-2.jpg", "img/sixbar-3.jpg", "img/sixbar-4.jpg", "img/sixbar-5.jpg"],
+        imagenes: ["img/sixbar-1.jpg", "img/sixbar-2.jpg", "img/sixbar-3.jpg", "img/sixbar-4.jpg"],
         enlaces: [
             { es: "Video destacado 1", en: "Featured video 1", url: drive("1VBjLSa_V_ZAF_Suvvx7-fXkp0PRThyon") },
             { es: "Video destacado 2", en: "Featured video 2", url: drive("1bSBda8SsVejl8pLGnNuBPdLmfuO7WLJi") },
@@ -106,7 +106,7 @@ const trabajos = [
         nombre: "Century 21 Oceanik",
         tipo: "brand",
         categorias: ["video"],
-        portada: "img/century21-3.jpg",
+        portada: "img/logo-century21.jpg",
         resumen: { es: "Bienes raíces · Edición de videos", en: "Real estate · Video editing" },
         descripcion: {
             es: "Edición de videos para la promoción de propiedades en redes sociales.",
@@ -124,7 +124,7 @@ const trabajos = [
         nombre: "Pa’ Quel Primo",
         tipo: "brand",
         categorias: ["redes"],
-        portada: "img/paquelprimo-1.jpg",
+        portada: "img/logo-paquelprimo.jpg",
         resumen: { es: "Restaurante · Instagram", en: "Restaurant · Instagram" },
         descripcion: {
             es: "Gestión de redes sociales en Instagram: carruseles y publicaciones.",
@@ -139,7 +139,7 @@ const trabajos = [
         nombre: "JP Élite Training",
         tipo: "brand",
         categorias: ["redes"],
-        portada: "img/jpelite-3.jpg",
+        portada: "img/logo-jpelite.jpg",
         resumen: { es: "Centro de entrenamiento", en: "Training center" },
         descripcion: {
             es: "Planificación de contenido, copywriting, publicación de contenido, edición de imágenes y video, atención de mensajería y gestión de pautas.",
@@ -151,48 +151,47 @@ const trabajos = [
         ]
     },
     {
-        nombre: "Spoilers Sin Culpa",
+        nombre: "Universidad Santa María",
         tipo: "uni",
-        categorias: ["universidad", "redes"],
-        portada: "img/spoilers-1.jpg",
-        resumen: { es: "Branding · Instagram", en: "Branding · Instagram" },
+        categorias: ["universidad", "redes", "video"],
+        portada: "img/logo-usm.jpg",
+        resumen: { es: "3 proyectos universitarios", en: "3 university projects" },
         descripcion: {
-            es: "Cuenta creada para la materia “Creación de Contenido”. Branding, creación y planificación de contenido, elaboración de guiones, grabación y edición de videos.",
-            en: "Account created for the “Content Creation” course. Branding, content creation and planning, scriptwriting, video shooting and editing."
+            es: "Proyectos realizados durante la carrera de Comunicación Social.",
+            en: "Projects created while studying Social Communication."
         },
-        imagenes: ["img/spoilers-1.jpg"],
-        enlaces: [
-            { es: "Ver Instagram", en: "View Instagram", url: "https://www.instagram.com/spoilersinculpa/" }
-        ]
-    },
-    {
-        nombre: "Reseña “Don’t Look Up”",
-        tipo: "uni",
-        categorias: ["universidad", "video"],
-        portada: "img/dontlookup-1.jpg",
-        resumen: { es: "Reseña periodística · Video", en: "Film review · Video" },
-        descripcion: {
-            es: "Video evaluativo: reseña periodística de opinión sobre la película “Don’t Look Up”.",
-            en: "Graded video: an opinion review of the film “Don’t Look Up”."
-        },
-        imagenes: ["img/dontlookup-1.jpg"],
-        enlaces: [
-            { es: "Ver video", en: "Watch video", url: drive("18wmzDodLgIPDQMKzWpPFbpRxKd97FaKm") }
-        ]
-    },
-    {
-        nombre: "Desarrollo del Pensamiento",
-        tipo: "uni",
-        categorias: ["universidad", "video"],
-        portada: "img/pensamiento-1.jpg",
-        resumen: { es: "Video evaluativo", en: "Graded video" },
-        descripcion: {
-            es: "Video resumen de lo aprendido durante el semestre en la materia “Desarrollo del Pensamiento”.",
-            en: "Video summarizing what we learned during the semester in the “Critical Thinking Development” course."
-        },
-        imagenes: ["img/pensamiento-1.jpg"],
-        enlaces: [
-            { es: "Ver video", en: "Watch video", url: drive("1V6ffXLaUeyBDxyhYr3A8X_MgzJ78z8lZ") }
+        // Cada proyecto de la universidad aparece como una tarjeta dentro de la ventana
+        subproyectos: [
+            {
+                nombre: "Spoilers Sin Culpa",
+                imagen: "img/logo-spoilers.jpg",
+                resumen: { es: "Branding · Instagram", en: "Branding · Instagram" },
+                descripcion: {
+                    es: "Cuenta creada para la materia “Creación de Contenido”. Branding, creación y planificación de contenido, elaboración de guiones, grabación y edición de videos.",
+                    en: "Account created for the “Content Creation” course. Branding, content creation and planning, scriptwriting, video shooting and editing."
+                },
+                enlace: { es: "Ver Instagram", en: "View Instagram", url: "https://www.instagram.com/spoilersinculpa/" }
+            },
+            {
+                nombre: "Reseña “Don’t Look Up”",
+                imagen: "img/dontlookup-1.jpg",
+                resumen: { es: "Reseña periodística · Video", en: "Film review · Video" },
+                descripcion: {
+                    es: "Video evaluativo: reseña periodística de opinión sobre la película “Don’t Look Up”.",
+                    en: "Graded video: an opinion review of the film “Don’t Look Up”."
+                },
+                enlace: { es: "Ver video", en: "Watch video", url: drive("18wmzDodLgIPDQMKzWpPFbpRxKd97FaKm") }
+            },
+            {
+                nombre: "Desarrollo del Pensamiento",
+                imagen: "img/pensamiento-1.jpg",
+                resumen: { es: "Video evaluativo", en: "Graded video" },
+                descripcion: {
+                    es: "Video resumen de lo aprendido durante el semestre en la materia “Desarrollo del Pensamiento”.",
+                    en: "Video summarizing what we learned during the semester in the “Critical Thinking Development” course."
+                },
+                enlace: { es: "Ver video", en: "Watch video", url: drive("1V6ffXLaUeyBDxyhYr3A8X_MgzJ78z8lZ") }
+            }
         ]
     }
 ];
@@ -257,10 +256,26 @@ function abrirModal(i) {
     document.getElementById("modal-kind").textContent = p.tipo === "uni" ? t.kind_uni : t.kind_brand;
     document.getElementById("modal-title").textContent = p.nombre;
     document.getElementById("modal-desc").textContent = p.descripcion[idioma];
-    document.getElementById("modal-gallery").innerHTML =
-        p.imagenes.map(src => `<img src="${src}" alt="${p.nombre}" loading="lazy">`).join("");
-    document.getElementById("modal-links").innerHTML = p.enlaces.map((e, n) =>
-        `<a class="btn ${n ? "btn-outline" : ""}" href="${e.url}" target="_blank" rel="noopener">${e[idioma]} ↗</a>`).join("");
+    const galeria = document.getElementById("modal-gallery");
+    const enlaces = document.getElementById("modal-links");
+    if (p.subproyectos) {
+        // Varios proyectos dentro de una misma tarjeta (Universidad)
+        galeria.className = "subprojects";
+        galeria.innerHTML = p.subproyectos.map(s => `
+            <article class="subproject">
+                <img src="${s.imagen}" alt="${s.nombre}" loading="lazy">
+                <h4>${s.nombre}</h4>
+                <span>${s.resumen[idioma]}</span>
+                <p>${s.descripcion[idioma]}</p>
+                <a class="btn" href="${s.enlace.url}" target="_blank" rel="noopener">${s.enlace[idioma]} ↗</a>
+            </article>`).join("");
+        enlaces.innerHTML = "";
+    } else {
+        galeria.className = "gallery";
+        galeria.innerHTML = p.imagenes.map(src => `<img src="${src}" alt="${p.nombre}" loading="lazy">`).join("");
+        enlaces.innerHTML = p.enlaces.map((e, n) =>
+            `<a class="btn ${n ? "btn-outline" : ""}" href="${e.url}" target="_blank" rel="noopener">${e[idioma]} ↗</a>`).join("");
+    }
     modal.classList.add("open");
     modal.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
@@ -311,26 +326,45 @@ menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
 const topbar = document.getElementById("topbar");
 window.addEventListener("scroll", () => topbar.classList.toggle("scrolled", window.scrollY > 40), { passive: true });
 
-// Contadores que suben
+// Contadores que suben (se reinician cada vez que vuelves a verlos)
 function contar(el) {
+    clearTimeout(el._timer);
     const meta = +el.dataset.target;
     let n = 0;
-    const paso = () => { n++; el.textContent = n; if (n < meta) setTimeout(paso, 900 / meta); };
+    const paso = () => { n++; el.textContent = n; if (n < meta) el._timer = setTimeout(paso, 900 / meta); };
     paso();
 }
 
-// Aparecer al hacer scroll + barras + contadores
+// Animaciones al hacer scroll: se repiten cada vez que subes o bajas
 const observador = new IntersectionObserver(entradas => {
     entradas.forEach(entrada => {
-        if (!entrada.isIntersecting) return;
         const el = entrada.target;
-        el.classList.add("visible");
-        el.querySelectorAll(".fill").forEach(f => f.style.width = f.dataset.value + "%");
-        el.querySelectorAll(".count").forEach(contar);
-        observador.unobserve(el);
+        if (entrada.intersectionRatio >= 0.15 && !el.classList.contains("visible")) {
+            // Entra en pantalla: aparece, se llenan las barras y suben los números
+            el.classList.add("visible");
+            el.querySelectorAll(".fill").forEach(f => f.style.width = f.dataset.value + "%");
+            el.querySelectorAll(".count").forEach(contar);
+        } else if (entrada.intersectionRatio === 0) {
+            // Sale por completo de la pantalla: se reinicia para animarse otra vez
+            el.classList.remove("visible");
+            el.querySelectorAll(".fill").forEach(f => f.style.width = "0");
+            el.querySelectorAll(".count").forEach(c => { clearTimeout(c._timer); c.textContent = "0"; });
+        }
     });
-}, { threshold: 0.15 });
+}, { threshold: [0, 0.15] });
 document.querySelectorAll(".reveal").forEach(el => observador.observe(el));
+
+// La portada repite su animación de entrada cuando vuelves arriba
+const portada = document.getElementById("inicio");
+const animadosPortada = portada.querySelectorAll(".big, .hero-photo, .hero-tag, .hero-buttons");
+let portadaFuera = false;
+new IntersectionObserver(([entrada]) => {
+    if (entrada.intersectionRatio === 0) portadaFuera = true;
+    else if (portadaFuera && entrada.intersectionRatio >= 0.3) {
+        portadaFuera = false;
+        animadosPortada.forEach(el => { el.style.animation = "none"; void el.offsetWidth; el.style.animation = ""; });
+    }
+}, { threshold: [0, 0.3] }).observe(portada);
 
 // Marca en el menú la sección donde estás
 const secciones = document.querySelectorAll("main section[id]");
