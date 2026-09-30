@@ -1,13 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portafolio de Priscila</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priscila Cuéllar · Social Media & Video</title>
+    <meta name="description" content="Portafolio de Priscila Cuéllar: marketing digital, gestión de redes sociales y edición de video.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23EC93B9'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='%23ECE4D9' font-family='Arial Black'>P</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Hola, este es el portafolio de Priscila</h1>
-	<script src="script.js"></script>
+
+    <!-- ============ MENÚ SUPERIOR ============ -->
+    <header class="topbar" id="topbar">
+        <a href="#inicio" class="brand">Priscila Cuéllar</a>
+
+        <nav class="menu" id="menu">
+            <a href="#sobre-mi" data-i18n="nav_about">Sobre mí</a>
+            <a href="#servicios" data-i18n="nav_services">Servicios</a>
+            <a href="#trabajos" data-i18n="nav_work">Trabajos</a>
+            <a href="#experiencia" data-i18n="nav_exp">Experiencia</a>
+            <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+        </nav>
+
+        <div class="topbar-right">
+            <div class="lang" role="group" aria-label="Idioma / Language">
+                <button class="lang-btn active" data-lang="es">ES</button>
+                <span>/</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============ INICIO ============ -->
+        <section class="hero" id="inicio">
+            <h1 class="hero-name">
+                <span class="big word-1">Priscila</span>
+                <span class="big word-2">Cuéllar</span>
+            </h1>
+            <img class="hero-photo" src="img/priscila.png" alt="Foto de Priscila Cuéllar">
+
+            <p class="hero-tag tag-1" data-i18n-html="hero_tag1">Impulso marcas con <br>marketing digital y <br>edición de video</p>
+            <p class="hero-tag tag-2" data-i18n-html="hero_tag2">Ideas que se convierten <br>en campañas con <br>resultados reales</p>
+
+            <div class="hero-buttons">
+                <a href="#trabajos" class="btn" data-i18n="btn_work">Ver mi trabajo</a>
+                <a href="#contacto" class="btn btn-outline" data-i18n="btn_contact">Contáctame</a>
+                <a href="cv-priscila-cuellar.pdf" class="btn btn-outline" download data-i18n="btn_cv">Descargar CV</a>
+            </div>
+        </section>
+
+        <!-- ============ SOBRE MÍ ============ -->
+        <section class="about" id="sobre-mi">
+            <div class="about-photo reveal"></div>
+            <div class="about-text reveal">
+                <h2 class="title" data-i18n-html="about_title">¡Hola!<br>Soy Priscila</h2>
+                <p data-i18n="about_p">Impulso marcas a través del marketing digital y la edición de video. Combino estrategias innovadoras con contenido audiovisual de alto impacto para conectar con la audiencia y generar resultados medibles. Mi enfoque se centra en transformar ideas en campañas y videos que potencien el crecimiento real de cada negocio.</p>
+
+                <div class="stats">
+                    <div><strong class="count" data-target="20">0</strong><span data-i18n="stat_brands">marcas gestionadas</span></div>
+                    <div><strong class="count" data-target="3">0</strong><span data-i18n="stat_places">agencias y proyectos</span></div>
+                    <div><strong class="count" data-target="4">0</strong><span data-i18n="stat_services">servicios</span></div>
+                </div>
+                <p class="location" data-i18n="location">📍 Barcelona, Anzoátegui · Venezuela</p>
+            </div>
+        </section>
+
+        <!-- ============ SERVICIOS ============ -->
+        <section id="servicios">
+            <div class="band band-services">
+                <h2 class="band-word reveal" data-i18n="band_services">Servicios</h2>
+            </div>
+            <p class="section-hint" data-i18n="services_hint">Toca cada servicio para ver más</p>
+
+            <div class="services">
+                <article class="service reveal">
+                    <button class="service-head" aria-expanded="false">
+                        <span class="circle" style="background-image:url(img/sixbar-2.jpg)"></span>
+                        <span class="service-num">01</span>
+                        <h3 data-i18n="s1_title">Edición de video</h3>
+                        <span class="service-short" data-i18n="s1_short">Nivel: Alto</span>
+                    </button>
+                    <p class="service-body" data-i18n="s1_body">Creo y edito contenido audiovisual pensado para comunicar el mensaje de tu marca de forma clara, atractiva y profesional. Ya sea para redes sociales, campañas publicitarias o presentaciones, cada video está diseñado para conectar con tu audiencia, reforzar tu identidad visual y generar impacto.</p>
+                </article>
+
+                <article class="service reveal">
+                    <button class="service-head" aria-expanded="false">
+                        <span class="circle" style="background-image:url(img/paquelprimo-8.jpg)"></span>
+                        <span class="service-num">02</span>
+                        <h3 data-i18n="s2_title">Gestión de redes sociales</h3>
+                        <span class="service-short">Community Manager</span>
+                    </button>
+                    <p class="service-body" data-i18n="s2_body">Gestiono estratégicamente tus redes sociales para que tu marca comunique de forma efectiva y conecte con su audiencia. A través del análisis de datos, planificación de contenido y la ejecución de campañas, optimizo tu presencia digital, aumento el engagement y te ayudo a construir una comunidad sólida y fiel.</p>
+                </article>
+
+                <article class="service reveal">
+                    <button class="service-head" aria-expanded="false">
+                        <span class="circle" style="background-image:url(img/jpelite-3.jpg)"></span>
+                        <span class="service-num">03</span>
+                        <h3 data-i18n="s3_title">Planificación de contenido</h3>
+                        <span class="service-short">Social Media Manager</span>
+                    </button>
+                    <p class="service-body" data-i18n="s3_body">Diseño estrategias de contenido alineadas con los objetivos de tu marca, creando calendarios editoriales basados en tendencias, datos de audiencia y buenas prácticas del sector. Me aseguro de que cada publicación sea coherente, atractiva y pensada para generar interacción, fortalecer tu presencia digital y convertir seguidores en clientes.</p>
+                </article>
+
+                <article class="service reveal">
+                    <button class="service-head" aria-expanded="false">
+                        <span class="circle" style="background-image:url(img/paquelprimo-1.jpg)"></span>
+                        <span class="service-num">04</span>
+                        <h3>Copywriting</h3>
+                        <span class="service-short" data-i18n="s4_short">Redacción de contenidos</span>
+                    </button>
+                    <p class="service-body" data-i18n="s4_body">Creo textos estratégicos que potencian la voz de tu marca y generan resultados reales. Ya sea para redes sociales, descripciones de productos, artículos de blog o campañas publicitarias, cada contenido está pensado para captar la atención, comunicar con claridad y convertir a tu audiencia en clientes fieles.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ TRABAJOS ============ -->
+        <section id="trabajos">
+            <div class="band band-work">
+                <h2 class="band-word reveal" data-i18n="band_work">Trabajos</h2>
+            </div>
+
+            <div class="filters" role="group">
+                <button class="filter active" data-filter="todos" data-i18n="f_all">Todos</button>
+                <button class="filter" data-filter="redes" data-i18n="f_social">Redes sociales</button>
+                <button class="filter" data-filter="video" data-i18n="f_video">Edición de video</button>
+                <button class="filter" data-filter="universidad" data-i18n="f_uni">Universidad</button>
+            </div>
+
+            <!-- Las tarjetas se crean automáticamente desde script.js -->
+            <div class="projects" id="projects"></div>
+        </section>
+
+        <!-- ============ EXPERIENCIA ============ -->
+        <section id="experiencia">
+            <div class="band band-exp">
+                <h2 class="band-word reveal" data-i18n="band_exp">Experiencia</h2>
+            </div>
+
+            <div class="exp-wrap">
+                <div class="timeline">
+                    <article class="job reveal">
+                        <span class="job-date" data-i18n="j1_date">Marzo 2025 – Actualidad</span>
+                        <h3>Irie Creative</h3>
+                        <p class="job-role" data-i18n="agency">Agencia de Marketing</p>
+                        <ul class="chips" data-i18n-list="j1_tasks"></ul>
+                        <p class="job-brands"><span data-i18n="brands_worked">Cuentas que trabajé:</span> SPGA Group, For You, JP Élite Training, Curdas Leskel, Leskel Food, Six Bar, Alimentos del Castillo, Full Cargo</p>
+                    </article>
+
+                    <article class="job reveal">
+                        <span class="job-date" data-i18n="j2_date">2024 – Actualidad</span>
+                        <h3>Freelance</h3>
+                        <p class="job-role" data-i18n="freelance_role">Proyectos independientes</p>
+                        <ul class="chips" data-i18n-list="j2_tasks"></ul>
+                        <p class="job-brands"><span data-i18n="brands_worked">Cuentas que trabajé:</span> Civo Barcelona, Century 21 Oceanik, Century 21 Ávila Plaza, Soporte 360</p>
+                    </article>
+
+                    <article class="job reveal">
+                        <span class="job-date" data-i18n="j3_date">Noviembre 2023 – Marzo 2025</span>
+                        <h3>Kiwi Company</h3>
+                        <p class="job-role" data-i18n="agency">Agencia de Marketing</p>
+                        <ul class="chips" data-i18n-list="j3_tasks"></ul>
+                        <p class="job-brands"><span data-i18n="brands_worked">Cuentas que trabajé:</span> Logic Air, Refri Todo, Bahía Spot, Pa’ Quel Primo, Vie Fondamental, Impeccable Wash, Lechería Cigar Club, Creaciones Andrea Fragancias</p>
+                    </article>
+                </div>
+
+                <aside class="side">
+                    <h3 class="side-title" data-i18n="edu_title">Educación</h3>
+                    <ul class="edu reveal">
+                        <li><strong>Universidad Santa María</strong><span data-i18n="edu1">Cursando Comunicación Social</span></li>
+                        <li><strong>Universidad Metropolitana</strong><span data-i18n="edu2">Inglés</span></li>
+                        <li><strong>IUTG</strong><span>Community Manager</span></li>
+                        <li><strong>Academia Alfa Creativos</strong><span data-i18n="edu4">Marketing Digital</span></li>
+                    </ul>
+
+                    <h3 class="side-title" data-i18n="skills_title">Habilidades</h3>
+                    <ul class="chips chips-big reveal" data-i18n-list="skills"></ul>
+
+                    <h3 class="side-title" data-i18n="tools_title">Herramientas que domino</h3>
+                    <div class="tools reveal">
+                        <div class="tool">
+                            <div class="tool-top"><span>CapCut</span><span>90%</span></div>
+                            <div class="bar"><div class="fill" data-value="90"></div></div>
+                        </div>
+                        <div class="tool">
+                            <div class="tool-top"><span>Canva</span><span>75%</span></div>
+                            <div class="bar"><div class="fill" data-value="75"></div></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ============ CONTACTO ============ -->
+        <section class="contact" id="contacto">
+            <p class="contact-kicker" data-i18n="contact_kicker">¿Trabajamos juntos?</p>
+            <h2 class="contact-big reveal" data-i18n-html="contact_big">Lista para transformar visiones en realidad.</h2>
+            <div class="contact-buttons reveal">
+                <a class="btn" href="https://wa.me/584248707871" target="_blank" rel="noopener">WhatsApp</a>
+                <a class="btn btn-outline" href="mailto:Priscilavcuellarc@gmail.com" data-i18n="contact_mail">Escríbeme un correo</a>
+                <a class="btn btn-outline" href="https://www.instagram.com/priscilacuellar_/" target="_blank" rel="noopener">Instagram</a>
+                <a class="btn btn-outline" href="cv-priscila-cuellar.pdf" download data-i18n="btn_cv">Descargar CV</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>© <span id="year">2026</span> Priscila Cuéllar</span>
+        <a href="#inicio" data-i18n="back_top">Volver arriba ↑</a>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a class="wa-float" href="https://wa.me/584248707871" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.3.6 4.5 1.8 6.4L3 29l7-1.8c1.8 1 3.9 1.5 6 1.5 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.3 10 10.1 5.3 16 5.3s10.7 4.7 10.7 10.5S21.9 26.4 16 26.4zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+    </a>
+
+    <!-- Ventana emergente de proyectos -->
+    <div class="modal" id="modal" aria-hidden="true">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
+            <p class="modal-kind" id="modal-kind"></p>
+            <h3 class="modal-title" id="modal-title"></h3>
+            <p class="modal-desc" id="modal-desc"></p>
+            <div class="gallery" id="modal-gallery"></div>
+            <div class="modal-links" id="modal-links"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
